@@ -2,7 +2,7 @@ package com.company;
 import java.lang.Math;
 import java.util.concurrent.TimeUnit;
 
-public class Main {
+public class RollingDice {
 
     public static void main(String[] args) {
         System.out.println("Rolling...");
