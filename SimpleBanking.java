@@ -22,7 +22,7 @@ class options {
     }
 
 }
-public class Simple Banking {
+public class SimpleBanking {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
