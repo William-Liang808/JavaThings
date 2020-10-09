@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Test {
+    public static String reverse(String str) {
+        String userInput = str;
+        String output = "";
+        int n = userInput.length();
+
+        if (n != 0) {
+            output += reverse(userInput.substring(1,n--))+ userInput.charAt(0);
+        }
+        return output;
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        boolean valid = false;
+        do {
+            System.out.print("Enter a string to reverse: ");
+            String userInput = input.nextLine();
+            if (userInput.contains("done")) {
+                valid = true;
+            }
+            if (!valid) {
+
+                System.out.println(reverse(userInput));
+            }
+        }while(!valid);
+    }
+}
